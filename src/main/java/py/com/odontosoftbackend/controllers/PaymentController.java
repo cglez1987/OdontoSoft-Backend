@@ -25,7 +25,7 @@ import py.com.odontosoftbackend.services.PaymentService;
  */
 @RestController
 @RequestMapping(path = {"/payments"})
-@CrossOrigin(origins = {"*"}, maxAge = 3600L)
+@CrossOrigin
 public class PaymentController {
 
     @Autowired

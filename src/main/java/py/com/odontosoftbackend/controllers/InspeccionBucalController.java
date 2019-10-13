@@ -25,7 +25,7 @@ import py.com.odontosoftbackend.services.InspeccionBucalService;
  */
 @RestController
 @RequestMapping(path = {"/inspeccionBucales"})
-@CrossOrigin(origins = {"*"}, maxAge = 3600L)
+@CrossOrigin
 public class InspeccionBucalController {
 
     @Autowired

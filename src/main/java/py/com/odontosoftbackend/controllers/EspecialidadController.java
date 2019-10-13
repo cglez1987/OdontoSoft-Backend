@@ -25,7 +25,7 @@ import py.com.odontosoftbackend.services.EspecialidadService;
  */
 @RestController
 @RequestMapping(path = {"/especialidades"})
-@CrossOrigin(origins = {"*"}, maxAge = 3600L)
+@CrossOrigin
 public class EspecialidadController {
 
     @Autowired

@@ -5,16 +5,11 @@
  */
 package py.com.odontosoftbackend;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
-import py.com.odontosoftbackend.models.Doctor;
-import py.com.odontosoftbackend.models.InspeccionBucal;
-import py.com.odontosoftbackend.services.DoctorService;
-import py.com.odontosoftbackend.services.InspeccionBucalService;
 
 /**
  *
@@ -25,11 +20,11 @@ import py.com.odontosoftbackend.services.InspeccionBucalService;
 @PropertySource({"application.properties"})
 public class OdontoSoft implements CommandLineRunner {
 
-    @Autowired
-    private DoctorService us;
-
-    @Autowired
-    private InspeccionBucalService inspService;
+//    @Autowired
+//    private DoctorService us;
+//
+//    @Autowired
+//    private InspeccionBucalService inspService;
 
     public static void main(String[] args) {
         SpringApplication.run(OdontoSoft.class, args);
@@ -37,7 +32,7 @@ public class OdontoSoft implements CommandLineRunner {
 
     @Override
     public void run(String[] args) throws Exception {
-        us.addDoctor(new Doctor(null, "Carlos", "Gonzalez", "cglez", "mana123"));
+        //us.addDoctor(new Doctor(null, "Carlos", "Gonzalez", "cglez", "mana123"));
     }
 
 }

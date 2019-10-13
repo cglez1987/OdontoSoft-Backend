@@ -25,7 +25,7 @@ import py.com.odontosoftbackend.services.TipoTratamientoService;
  */
 @RestController
 @RequestMapping(path = {"/tipoTratamientos"})
-@CrossOrigin(origins = {"*"}, maxAge = 3600L)
+@CrossOrigin
 public class TipoTratamientoController {
 
     @Autowired

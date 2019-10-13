@@ -6,7 +6,6 @@
 package py.com.odontosoftbackend.controllers;
 
 import java.util.List;
-import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -26,7 +25,7 @@ import py.com.odontosoftbackend.services.DiagnosticoService;
  */
 @RestController
 @RequestMapping(path = {"/diagnosticos"})
-@CrossOrigin(origins = {"*"}, maxAge = 3600L)
+@CrossOrigin
 public class DiagnosticoController {
 
     @Autowired
